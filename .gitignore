@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+
+# Environments
+env_algoritmo-comisiones-Odoo/
+env.bak/
+venv.bak/ 
+
+
+# Variables de entorno
+*.env
+*.env.local
