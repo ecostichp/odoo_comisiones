@@ -21,7 +21,8 @@ import seaborn as sns
 
 
 api_url = os.environ.get('ODOO_URL_API')
-api_db = os.environ.get('ODOO_DB_API')
+# api_db = os.environ.get('ODOO_DB_API')
+api_db = os.environ.get('ODOO_DB_PRUEBA_API')
 api_username = os.environ.get('ODOO_USERNAME_API')
 api_clave = os.environ.get('ODOO_CLAVE_API')
 
@@ -92,8 +93,8 @@ descrip_sales_users_df  = descrip_users_df.loc[~descrip_users_df['sale_team_id']
 
 search_fact = ["&", "&", "&",
           ("state", "=", "posted"),
-          ("invoice_date", ">=", "2024-01-01"), 
-          ("invoice_date", "<=", "2024-01-31"), 
+          ("invoice_date", ">=", "2024-03-01"), 
+          ("invoice_date", "<=", "2024-03-31"), 
           ("journal_id", "in", [10, 90, 30, 97])]
 
 fact_doc_fields = [
