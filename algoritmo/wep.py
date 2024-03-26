@@ -1,3 +1,10 @@
+search_fact = ["&", "&", "&",
+          ("state", "=", "posted"),
+          ("invoice_date", ">=", "2024-03-01"), 
+          ("invoice_date", "<=", "2024-03-31"), 
+          ("journal_id", "in", [10, 90, 30, 97])]
+
+
 # Se importan las librerías necesarias
 
 
@@ -21,8 +28,8 @@ import seaborn as sns
 
 
 api_url = os.environ.get('ODOO_URL_API')
-# api_db = os.environ.get('ODOO_DB_API')
-api_db = os.environ.get('ODOO_DB_PRUEBA_API')
+api_db = os.environ.get('ODOO_DB_API')
+# api_db = os.environ.get('ODOO_DB_PRUEBA_API')
 api_username = os.environ.get('ODOO_USERNAME_API')
 api_clave = os.environ.get('ODOO_CLAVE_API')
 
@@ -91,11 +98,7 @@ descrip_sales_users_df  = descrip_users_df.loc[~descrip_users_df['sale_team_id']
 # Después, se especifican los campos necesarios de este modelo en `fact_doc_fields` y se genera la lectura de los ids anteriores. Esto devuelve una lista de diccionarios con la información de cada factura que se almacena en `fact_doc_json`
 
 
-search_fact = ["&", "&", "&",
-          ("state", "=", "posted"),
-          ("invoice_date", ">=", "2024-03-01"), 
-          ("invoice_date", "<=", "2024-03-31"), 
-          ("journal_id", "in", [10, 90, 30, 97])]
+
 
 fact_doc_fields = [
           'name',
