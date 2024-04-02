@@ -91,6 +91,16 @@ descrip_users_df.loc[descrip_users_df['sale_team_id'].isin([6,8]), 'warehouse'] 
 
 descrip_sales_users_df  = descrip_users_df.loc[~descrip_users_df['sale_team_id'].isna()]
 
+
+
+
+desc_product_fields = ['name', 'default_code']
+desc_product_json = models.execute_kw(api_db, uid, api_clave, 'product.template', 'search_read', [], {'fields': desc_product_fields})
+desc_product_df = pd.DataFrame(desc_product_json)
+desc_product_df.columns = ['id_producto', 'descripción_producto', 'código_producto']
+
+
+
 # # <span style="color:steelblue">Algoritmo<span>
 
 # Se buscan los ids de las facturas en el modelo <font color="#F414FA">account.move</font> con los criterios de búsqueda `search_fact`. Esto devuelve una lista de enteros (ids de estas facturas) que se almacena en `fact_doc_ids`.
