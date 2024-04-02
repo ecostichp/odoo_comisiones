@@ -1,16 +1,8 @@
-search_fact = ["&", "&", "&",
-          ("state", "=", "posted"),
-          ("invoice_date", ">=", "2024-03-01"), 
-          ("invoice_date", "<=", "2024-03-31"), 
-          ("journal_id", "in", [10, 90, 30, 97])]
-
-
 # Se importan las librerías necesarias
-
-
 # Librerías para manejo del sistema
 import os
 from pathlib import Path
+from datetime import datetime, timedelta
 
 # Librerías para manejar accesos a datos (SQL y API)
 from sqlalchemy import create_engine
@@ -18,11 +10,77 @@ import xmlrpc.client
 
 # Librerías para ciencia de datos
 import pandas as pd
-import numpy as np
 
-# Librerías para graficación de datos
-import matplotlib.pyplot as plt
-import seaborn as sns
+
+
+def search_fact_func(mes: int, dias: None | list[int] = None, vendedor: None | int  = None) -> list[str]:
+    
+    if type(mes) != int or mes < 1 or mes > 12:
+        raise Exception (f'El mes es incorrecto. El párametro "mes" debe ser un número entero entre 1 y 12. Escribiste: {mes}')
+    
+
+    if dias is None:
+        param_dia_ini = datetime(2024, mes, 1)
+        param_dia_fin = datetime(2024, mes + 1, 1) - timedelta(days= 1)
+    
+    elif len(dias) != 2:
+        raise Exception (f'El párametro "días_del_mes" debe ser una lista de 2 elementos. El día inicial de búsqueda se escribe en el índice 0 de la lista, el día final de búsqueda en el índice 1. La lista tiene: {len(dias)} de elementos')
+    
+    elif type(dias[0]) != int or type(dias[1]) != int:
+        raise Exception (f'El párametro "día_inicial_de_búsqueda" y "día_final_de_búsqueda" sólo pueden ser números enteros.')
+
+    elif dias[0] > dias[1]:
+        raise Exception (f'El párametro "día_inicial_de_búsqueda" no debe ser mayor al parámetro "día_final_de_búsqueda". El día inicial de búsqueda se escribe en el índice 0 de la lista, el día final de búsqueda en el índice 1.')
+    
+    else:
+        try:
+            param_dia_ini = datetime(2024, mes, dias[0])
+        except:
+            raise Exception (f'El párametro "día_inicial_de_búsqueda" es incorrecto. La fecha "día: {dias[0]}, mes: {mes}, año 2024" no existe')
+        try:
+            param_dia_fin = datetime(2024, mes, dias[1])
+        except:
+            raise Exception (f'El párametro "día_final_de_búsqueda" es incorrecto. La fecha "día: {dias[1]}, mes: {mes}, año 2024" no existe')
+
+
+    search_fact_all = [
+        "&",
+            ("state", "=", "posted"),
+        "&", "&",
+            ("invoice_date", ">=", param_dia_ini.strftime('%Y-%m-%d')),
+            ("invoice_date", "<=", param_dia_fin.strftime('%Y-%m-%d')),
+            ("journal_id", "in", [10, 90, 30, 97])
+        ]
+
+    search_fact_vendedor = [
+        "&",
+            ("state", "=", "posted"),
+        "&", "&",
+            ("invoice_date", ">=", param_dia_ini.strftime('%Y-%m-%d')),
+            ("invoice_date", "<=", param_dia_fin.strftime('%Y-%m-%d')),
+        "&",
+            ("journal_id", "in", [10, 90, 30, 97]),
+        "|",
+            ("invoice_user_id", "=", vendedor),
+            ("pos_order_ids.lines.sale_order_origin_id.user_id", "=", vendedor)]
+
+
+    if vendedor == None:
+        return search_fact_all
+    
+    if type(vendedor) != int:
+        raise Exception (f'El párametro "Vendedor" debe ser un número entero. Escribiste: {vendedor}')
+    
+    return search_fact_vendedor
+
+
+mes = int(input('Escribe el número de mes: ')) 
+
+search_fact = search_fact_func(mes)
+
+
+
+
 
 # Se importan variables de entorno
 
