@@ -406,7 +406,7 @@ def complete_df_func(api_params: dict, fact_df: pd.DataFrame, pos_doc_equal_ids_
                 for sale in sale_pos_line_not_found_json:
                     if pos['sale_order_line_id']:
                         if pos['sale_order_line_id'][0] == sale['id']:
-                            complete_df.loc[(complete_df['salesperson_id'].isna()) & (complete_df['invoice_origin'] == pos_doc_names_not_sale_doc[1].iloc[i]) & (complete_df['product_id'] == product_id_not_sale_doc[1].iloc[i]), 'salesperson_id'] = sale['id']
+                            complete_df.loc[(complete_df['salesperson_id'].isna()) & (complete_df['invoice_origin'] == pos_doc_names_not_sale_doc[1].iloc[i]) & (complete_df['product_id'] == product_id_not_sale_doc[1].iloc[i]), 'salesperson_id'] = sale['salesman_id'][0]
             
     return complete_df
 
