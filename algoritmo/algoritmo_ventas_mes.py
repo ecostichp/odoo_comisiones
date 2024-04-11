@@ -411,8 +411,8 @@ def complete_df_func(api_params: dict, fact_df: pd.DataFrame, pos_doc_equal_ids_
     return complete_df
 
 
-def ventas_df_func(mes: int, dias: None | list[int] = None, vendedor: None | int  = None) -> pd.DataFrame:
-    api_params = api_params_func()
+def ventas_mes_func(mes: int, dias: None | list[int] = None, vendedor: None | int  = None, test_db: bool = False) -> pd.DataFrame:
+    api_params = api_params_func(test_db)
     search_fact = search_fact_func(mes, dias, vendedor)
     
     fact_doc_ids, fact_doc_json, fact_line_json, pos_line_json, sale_doc_json = api_call_func(api_params, search_fact)
