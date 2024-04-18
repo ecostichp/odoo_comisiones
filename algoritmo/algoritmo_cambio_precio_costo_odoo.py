@@ -180,7 +180,7 @@ def api_write_new_product_data_func(api_params: dict, complete_precioycosto_df: 
     uid = api_params['api_uid']
     models = api_params['api_models']
 
-    purchase_line_id_items,	product_id_pp_items, purchase_cost_items, fecha_factura_items, product_id_items, factor_utilidad_items, product_price_items = complete_precioycosto_df.items()
+    purchase_line_id_items,	product_id_pp_items, purchase_cost_items, order_id_items, fecha_factura_items, product_id_items, factor_utilidad_items, product_price_items = complete_precioycosto_df.items()
 
     for i in range(len(purchase_line_id_items[1])):
         try:
