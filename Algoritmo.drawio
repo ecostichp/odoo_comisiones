@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="zAm5oCvyo72l6dmEX2wN" name="Hipótesis 1">
-        <mxGraphModel dx="709" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1571" dy="893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="tINj1l4p1RiX-SJvHxFT-60" parent="0"/>
@@ -457,143 +457,232 @@
             </root>
         </mxGraphModel>
     </diagram>
-    <diagram name="Página-1" id="vx7lEHwRlZoMhDa5Dyir">
-        <mxGraphModel dx="1559" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-            <root>
-                <mxCell id="0"/>
-                <mxCell id="1" parent="0"/>
-                <mxCell id="yccqUCeBZDg-repv88Xr-1" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Pr - Ct = MgC&amp;nbsp;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="29" y="20" width="280" height="160" as="geometry"/>
-                </mxCell>
-                <mxCell id="yccqUCeBZDg-repv88Xr-4" value="Precio por línea de Orden de Venta.&lt;br&gt;&lt;br&gt;Sólo líneas facturadas (posibilidades: varias facturas x línea)&lt;br&gt;&lt;br&gt;Filosofía punto de partida: ???&lt;br&gt;&lt;br&gt;Ajustes: Refacuraciones, Devoluciones, Cancelaciones.&lt;br&gt;&lt;br&gt;Precio correcto = precio escrito en la factura" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-10" y="180" width="200" height="260" as="geometry"/>
-                </mxCell>
-                <mxCell id="yccqUCeBZDg-repv88Xr-5" value="&lt;font color=&quot;#000000&quot;&gt;Analizar filosofía punto de partida: Facturas vs Ordenes de Venta&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
-                    <mxGeometry x="-60" y="170" width="200" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="yccqUCeBZDg-repv88Xr-6" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="yccqUCeBZDg-repv88Xr-5" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="40" y="123.21000000000001" as="sourcePoint"/>
-                        <mxPoint x="109" y="110.00425837320583" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="yccqUCeBZDg-repv88Xr-7" value="¿Costo correcto? (posibilidades: REPS cuando hay vida de anaquel, Cto-Real cuando es compra-venta única)&lt;br&gt;&lt;br&gt;Costo correcto = El que salga más caro: REPS tomado del código (campo costo) y Cto-Real se toma de las compras.&lt;br&gt;&lt;br&gt;Cto Real = Se checa línea x línea hasta dar con el código con el siguiente critrerio: Si reserva es sufuciente, compra hacia abajo; Si reserva en negativa, compra hacia arriba." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="270" y="250" width="200" height="280" as="geometry"/>
-                </mxCell>
-                <mxCell id="yccqUCeBZDg-repv88Xr-8" value="&lt;font color=&quot;#000000&quot;&gt;Analizar filosofía de reservas de entrega de mercancía (múdulo de inventarios)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
-                    <mxGeometry x="220" y="220" width="200" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="yccqUCeBZDg-repv88Xr-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.468;entryY=0.563;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="yccqUCeBZDg-repv88Xr-8" target="yccqUCeBZDg-repv88Xr-1" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="360" y="113.21000000000001" as="sourcePoint"/>
-                        <mxPoint x="429" y="100.00425837320583" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="CEysQWKRr6euDYXReCV1-1" value="Margen correcto = Precio correcto menos costo correcto" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="190" width="200" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="CEysQWKRr6euDYXReCV1-3" value="&lt;font color=&quot;#000000&quot;&gt;Output del algoritmo:&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-weight: 700;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); font-weight: 700;&quot;&gt;Un dashboard por:&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-weight: 700;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); font-weight: 700;&quot;&gt;&amp;nbsp;usuario / departamento / global&lt;/span&gt;&lt;/font&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="282.5" y="20" width="177.5" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="CEysQWKRr6euDYXReCV1-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="CEysQWKRr6euDYXReCV1-1" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="683" y="150" as="sourcePoint"/>
-                        <mxPoint x="220" y="110" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-            </root>
-        </mxGraphModel>
-    </diagram>
     <diagram id="8SzQraeOPds5PR72Qs6C" name="Costo">
-        <mxGraphModel dx="1013" dy="590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1571" dy="893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-3" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zut-T2eq8R0VGF5kbp45-1" target="zut-T2eq8R0VGF5kbp45-2">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-3" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="zut-T2eq8R0VGF5kbp45-1" target="zut-T2eq8R0VGF5kbp45-2" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="419.5" y="150" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-1" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Costo Correcto&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-1" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Costo Correcto&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="360" y="30" width="119" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-5" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="zut-T2eq8R0VGF5kbp45-2" target="zut-T2eq8R0VGF5kbp45-4">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-5" value="" style="edgeStyle=none;html=1;" parent="1" source="zut-T2eq8R0VGF5kbp45-2" target="zut-T2eq8R0VGF5kbp45-4" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-23" value="" style="edgeStyle=none;html=1;fontSize=14;" edge="1" parent="1" source="zut-T2eq8R0VGF5kbp45-2" target="zut-T2eq8R0VGF5kbp45-22">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-23" value="" style="edgeStyle=none;html=1;fontSize=14;" parent="1" source="zut-T2eq8R0VGF5kbp45-2" target="zut-T2eq8R0VGF5kbp45-22" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Proveedor del código vendido está dentro de la Lista de Proveedores Oficiales&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Proveedor del código vendido está dentro de la Lista de Proveedores Oficiales&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="314.5" y="190" width="210" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-8" value="" style="edgeStyle=none;html=1;fontSize=18;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zut-T2eq8R0VGF5kbp45-4" target="zut-T2eq8R0VGF5kbp45-9">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-8" value="" style="edgeStyle=none;html=1;fontSize=18;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="zut-T2eq8R0VGF5kbp45-4" target="zut-T2eq8R0VGF5kbp45-9" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="192.94117647058806" y="280" as="sourcePoint"/>
                         <mxPoint x="200" y="340" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-12" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="1" source="zut-T2eq8R0VGF5kbp45-4" target="zut-T2eq8R0VGF5kbp45-11">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-12" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="zut-T2eq8R0VGF5kbp45-4" target="zut-T2eq8R0VGF5kbp45-11" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Cto Corr = Compra de Prov No Oficial&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Cto Corr = Compra de Prov No Oficial&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="120" y="170" width="120" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-6" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;No&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-6" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;No&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="255.5" y="190" width="59" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-7" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Tiempo&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-7" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Tiempo&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="100" y="330" width="79" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-17" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="1" source="zut-T2eq8R0VGF5kbp45-9" target="zut-T2eq8R0VGF5kbp45-16">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-17" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="zut-T2eq8R0VGF5kbp45-9" target="zut-T2eq8R0VGF5kbp45-16" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-9" value="Hacia atrás" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-9" value="Hacia atrás" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="150" y="390" width="70" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-15" value="" style="edgeStyle=none;html=1;fontSize=18;" edge="1" parent="1" source="zut-T2eq8R0VGF5kbp45-11" target="zut-T2eq8R0VGF5kbp45-14">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-15" value="" style="edgeStyle=none;html=1;fontSize=18;" parent="1" source="zut-T2eq8R0VGF5kbp45-11" target="zut-T2eq8R0VGF5kbp45-14" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-11" value="Hacia adelante" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-11" value="Hacia adelante" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="30" y="390" width="80" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-14" value="Venta con existencia negativa" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-14" value="Venta con existencia negativa" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="30" y="520" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-16" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Escenario normal&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-16" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Escenario normal&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="145" y="520" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-18" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;Si&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-18" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;Si&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="540" y="190" width="59" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-19" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Si&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-19" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Si&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="620" y="410" width="59" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-25" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="zut-T2eq8R0VGF5kbp45-22" target="zut-T2eq8R0VGF5kbp45-24">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-25" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" parent="1" source="zut-T2eq8R0VGF5kbp45-22" target="zut-T2eq8R0VGF5kbp45-24" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-22" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Cto Corr = REPS&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-22" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Cto Corr = REPS&lt;/span&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="610" y="200" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-27" value="" style="edgeStyle=none;html=1;fontSize=14;" edge="1" parent="1" source="zut-T2eq8R0VGF5kbp45-24" target="zut-T2eq8R0VGF5kbp45-26">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-27" value="" style="edgeStyle=none;html=1;fontSize=14;" parent="1" source="zut-T2eq8R0VGF5kbp45-24" target="zut-T2eq8R0VGF5kbp45-26" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-24" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Hay una compra arriba de esta venta, dentro del mes&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-24" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Hay una compra arriba de esta venta, dentro del mes&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="597.5" y="330" width="145" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-26" value="REPS = Cto de producto de la compra inmediata arriba, dentro del mes" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-26" value="REPS = Cto de producto de la compra inmediata arriba, dentro del mes" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="610" y="460" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-31" value="" style="edgeStyle=none;html=1;fontSize=14;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zut-T2eq8R0VGF5kbp45-24" target="zut-T2eq8R0VGF5kbp45-29">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-31" value="" style="edgeStyle=none;html=1;fontSize=14;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="zut-T2eq8R0VGF5kbp45-24" target="zut-T2eq8R0VGF5kbp45-29" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="790" y="510" as="sourcePoint"/>
                         <mxPoint x="830" y="430" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-29" value="REPS = Cto Lista de Precio del proveedor + flete" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-29" value="REPS = Cto Lista de Precio del proveedor + flete" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="810" y="340" width="130" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="zut-T2eq8R0VGF5kbp45-32" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;No&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="zut-T2eq8R0VGF5kbp45-32" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;No&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="742.5" y="340" width="59" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="aUxxKooWEVkYoLJLuRi1" name="Cobranza">
+        <mxGraphModel dx="1571" dy="893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-2" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Cobranza&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="30" width="119" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-3" value="" style="edgeStyle=none;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-2" target="3HIfQA-CBa0rIe9miVDo-16" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="314.5" y="230" as="sourcePoint"/>
+                        <mxPoint x="270" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-4" value="" style="edgeStyle=none;html=1;fontSize=14;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-2" target="3HIfQA-CBa0rIe9miVDo-15" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="525" y="230" as="sourcePoint"/>
+                        <mxPoint x="570" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-13" style="edgeStyle=none;html=1;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-16" target="3HIfQA-CBa0rIe9miVDo-17" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="237.5" as="sourcePoint"/>
+                        <mxPoint x="210" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-15" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;API Call&amp;nbsp;&lt;/font&gt;(model pos.paymants)&lt;br&gt;date = &quot;este mes&quot;" style="triangle;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="130" width="100.5" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-16" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;API Call&amp;nbsp;&lt;/font&gt;(model account.&lt;br&gt;paymants)&lt;br&gt;date = &quot; este mes&quot;" style="triangle;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="109.88" y="200" width="100.5" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-24" value="" style="edgeStyle=none;html=1;fontSize=12;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-17" target="3HIfQA-CBa0rIe9miVDo-34" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="259.875" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-17" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;JSON:&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Tomar campo&amp;nbsp; 'recoincilied_Invoice Ids'&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="260.25" y="215" width="99.75" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-19" style="edgeStyle=none;html=1;fontSize=14;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;" parent="1" source="3HIfQA-CBa0rIe9miVDo-34" target="3HIfQA-CBa0rIe9miVDo-31" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="330" y="510" as="sourcePoint"/>
+                        <mxPoint x="260.25" y="735" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-22" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;API Call&amp;nbsp;&lt;/font&gt;(model pos.order&lt;br&gt;Ids = pos_doc_Ids" style="triangle;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="250" width="100.5" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-28" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-26" target="3HIfQA-CBa0rIe9miVDo-33" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="425.7449999999999" y="1020" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-26" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;JSON:&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Tomar campo&amp;nbsp; 'date_invoice'&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="770" width="99.75" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-31" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;API Call&amp;nbsp;&lt;/font&gt;(model account.&lt;br&gt;move)&lt;br&gt;Ids in lista_Invoice _Ids" style="triangle;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="755" width="100.5" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-32" style="edgeStyle=none;html=1;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-31" target="3HIfQA-CBa0rIe9miVDo-26" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="690" as="sourcePoint"/>
+                        <mxPoint x="425.75" y="895" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-33" value="DataFrame para encontrar pagos de este mes a facturas menores a 90 días" style="whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="339.875" y="890" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-34" value="lista_invoice_ids&lt;br&gt;.append()" style="whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="250.125" y="665" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-37" value="" style="edgeStyle=none;html=1;fontSize=12;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-38" target="3HIfQA-CBa0rIe9miVDo-22" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580.625" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-38" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;JSON:&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Tomar campo&amp;nbsp; pos_doc_ids'&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="140" width="99.75" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-39" style="edgeStyle=none;html=1;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-15" target="3HIfQA-CBa0rIe9miVDo-38" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="490.26" y="280" as="sourcePoint"/>
+                        <mxPoint x="489.885" y="345" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-49" style="edgeStyle=none;html=1;fontSize=12;" parent="1" source="3HIfQA-CBa0rIe9miVDo-41" target="3HIfQA-CBa0rIe9miVDo-47" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-41" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;API Call&amp;nbsp;&lt;/font&gt;(model account.move.line&lt;br&gt;Ids = session_ move_ids&lt;br&gt;&amp;amp; partner_id = partner_id" style="triangle;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="390" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-42" value="" style="edgeStyle=none;html=1;fontSize=12;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-43" target="3HIfQA-CBa0rIe9miVDo-41" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="581.375" y="675" as="targetPoint"/>
+                        <mxPoint x="720" y="335" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-43" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;JSON:&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Tomar campo&amp;nbsp; 'session move_ids' y&lt;br&gt;&lt;/font&gt;'partner_id'&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="265" width="99.75" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-44" style="edgeStyle=none;html=1;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-22" target="3HIfQA-CBa0rIe9miVDo-43" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="581" y="510" as="sourcePoint"/>
+                        <mxPoint x="490.635" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-46" value="" style="edgeStyle=none;html=1;fontSize=12;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-47" target="3HIfQA-CBa0rIe9miVDo-50" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="581.4492102260215" y="884.8503533462795" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-47" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;JSON:&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Tomar campo&amp;nbsp; 'matching_number'&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="405" width="99.75" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-52" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;" parent="1" source="3HIfQA-CBa0rIe9miVDo-50" target="3HIfQA-CBa0rIe9miVDo-51" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-50" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;API Call&amp;nbsp;&lt;/font&gt;(model account.move.line&lt;br&gt;matching_number = matching_number&lt;br&gt;&amp;amp; move_type = out_invoice" style="triangle;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="520" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-53" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-51" target="3HIfQA-CBa0rIe9miVDo-34" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-51" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;JSON:&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Tomar campo&amp;nbsp; 'move_id[0]'&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="570.13" y="660" width="99.75" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-55" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Cobranza PdV&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="660.5" y="50" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-56" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Cobranza Contabilidad&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="130.13" y="50" width="60" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
