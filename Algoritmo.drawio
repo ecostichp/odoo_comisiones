@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="zAm5oCvyo72l6dmEX2wN" name="Hipótesis 1">
-        <mxGraphModel dx="1571" dy="893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1020" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="tINj1l4p1RiX-SJvHxFT-60" parent="0"/>
@@ -552,7 +552,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="aUxxKooWEVkYoLJLuRi1" name="Cobranza">
-        <mxGraphModel dx="1571" dy="893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1020" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -597,7 +597,7 @@
                         <mxPoint x="260.25" y="735" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="3HIfQA-CBa0rIe9miVDo-22" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;API Call&amp;nbsp;&lt;/font&gt;(model pos.order&lt;br&gt;Ids = pos_doc_Ids" style="triangle;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-22" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;API Call&amp;nbsp;&lt;/font&gt;(model pos.order&lt;br&gt;Ids = pos_order_Id" style="triangle;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="560" y="250" width="100.5" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="3HIfQA-CBa0rIe9miVDo-28" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-26" target="3HIfQA-CBa0rIe9miVDo-33" edge="1">
@@ -628,7 +628,7 @@
                         <mxPoint x="580.625" y="410" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="3HIfQA-CBa0rIe9miVDo-38" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;JSON:&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Tomar campo&amp;nbsp; pos_doc_ids'&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-38" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;JSON:&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Tomar campo&amp;nbsp; pos_order_id&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="720" y="140" width="99.75" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="3HIfQA-CBa0rIe9miVDo-39" style="edgeStyle=none;html=1;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-15" target="3HIfQA-CBa0rIe9miVDo-38" edge="1">
@@ -649,7 +649,7 @@
                         <mxPoint x="720" y="335" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="3HIfQA-CBa0rIe9miVDo-43" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;JSON:&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Tomar campo&amp;nbsp; 'session move_ids' y&lt;br&gt;&lt;/font&gt;'partner_id'&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                <mxCell id="3HIfQA-CBa0rIe9miVDo-43" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;JSON:&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Tomar campo&amp;nbsp; 'session_move_id' y&lt;br&gt;&lt;/font&gt;'partner_id'&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="720" y="265" width="99.75" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="3HIfQA-CBa0rIe9miVDo-44" style="edgeStyle=none;html=1;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3HIfQA-CBa0rIe9miVDo-22" target="3HIfQA-CBa0rIe9miVDo-43" edge="1">
