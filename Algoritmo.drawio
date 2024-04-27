@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="zAm5oCvyo72l6dmEX2wN" name="Hipótesis 1">
-        <mxGraphModel dx="719" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1020" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="tINj1l4p1RiX-SJvHxFT-60" parent="0"/>
@@ -552,7 +552,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="aUxxKooWEVkYoLJLuRi1" name="Cobranza">
-        <mxGraphModel dx="972" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1020" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -666,7 +666,7 @@
                         <mxPoint x="674.75" y="580" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="fCX38RHHD_qrqwQ1rysq-3" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;API Call&amp;nbsp;&lt;/font&gt;(model account.move.line&lt;br&gt;Ids = session_ move_ids&lt;br&gt;&amp;amp; partner_id = partner_id" style="triangle;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                <mxCell id="fCX38RHHD_qrqwQ1rysq-3" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;API Call&amp;nbsp;&lt;/font&gt;(model account.move.line&lt;br&gt;move_Id = session_ move_ids&lt;br&gt;&amp;amp; partner_id = partner_id" style="triangle;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="564.75" y="530" width="120" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="fCX38RHHD_qrqwQ1rysq-4" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;JSON:&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Tomar campo&amp;nbsp; 'matching_number'&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
