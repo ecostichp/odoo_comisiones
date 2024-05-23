@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="zAm5oCvyo72l6dmEX2wN" name="Hipótesis 1">
-        <mxGraphModel dx="972" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="719" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="tINj1l4p1RiX-SJvHxFT-60" parent="0"/>
@@ -552,7 +552,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="aUxxKooWEVkYoLJLuRi1" name="Cobranza">
-        <mxGraphModel dx="1620" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="719" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
