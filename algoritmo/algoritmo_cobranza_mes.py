@@ -235,7 +235,7 @@ def pay_fact_df_func(mes: int, fact_doc_json: dict) -> pd.DataFrame:
                     new = {}
                     new['fac_doc_id'] = fact['id']
                     new['fac_doc_name'] = fact['name']
-                    new['fac_doc_cliente'] = fact['partner_id'][1]
+                    new['fac_doc_cliente'] = fact['partner_id'][0]
                     new['fac_doc_date'] = fact['date']
                     new['fac_doc_total'] = fact['amount_total']
                     new['fac_doc_deuda'] = fact['amount_residual']

@@ -35,6 +35,9 @@ def if_list_gt0_idex (item: dict, key: str, index:int ) -> None | int:
 
 
 
+
+# Tabla descripciones usuarios:
+
 descrip_uripsers_fields = ['name', 'active', 'sale_team_id']
 descrip_users_json = models.execute_kw(api_db, uid, api_clave, 'res.users', 'search_read', [["|", ("active", "=", True), ("active", "=", False)]], {'fields': descrip_uripsers_fields})
 
@@ -80,3 +83,12 @@ lineas_productos_df = lineas_productos_df1[['prod_código', 'prod_línea']]
 
 
 descrip_product_df = descrip_product_df1.merge(lineas_productos_df, how='left', on='prod_código')
+
+
+
+# Tabla descripciones clientes:
+
+descrip_partner_fields = ['name']
+descrip_partner_json = models.execute_kw(api_db, uid, api_clave, 'res.partner', 'search_read', [], {'fields': descrip_partner_fields})
+descrip_partner_df = pd.DataFrame(descrip_partner_json)
+descrip_partner_df.columns = ['partner_id', 'partner_name']
