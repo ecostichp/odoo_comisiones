@@ -244,6 +244,9 @@ def pay_fact_df_func(mes: int, fact_doc_json: dict) -> pd.DataFrame:
                     if 'PdV ' in pay['ref']:
                         i = pay['ref'].find('PdV ')
                         new['ref'] = pay['ref'][i:i+12]
+                    elif 'Shop' in pay['ref']:
+                        i = pay['ref'].find('Shop')
+                        new['ref'] = pay['ref'][i:i+9]
                     else:
                         new['ref'] = pd.NA
 
