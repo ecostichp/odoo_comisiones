@@ -1,6 +1,6 @@
 import sqlite3
 
-db_file = './data/localdb_algoritmo_comisiones.db'
+db_file = './data/comisiones.db'
 
 
 def connect_to_test_db():
