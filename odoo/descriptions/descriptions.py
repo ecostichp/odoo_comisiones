@@ -4,7 +4,7 @@ import xmlrpc.client
 import pandas as pd
 from sqlalchemy import create_engine
 
-db_file = 'localdb_algoritmo_comisiones.db'
+db_file = 'comisiones.db'
 db_file_path_str = str(Path().cwd().parent.joinpath(f'data/{db_file}'))
 
 engine = create_engine(f'sqlite:///{db_file_path_str}')
