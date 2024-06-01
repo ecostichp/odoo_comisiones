@@ -5,7 +5,8 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 db_file = 'comisiones.db'
-db_file_path_str = str(Path().cwd().parent.joinpath(f'data/{db_file}'))
+db_file_path_str = str(Path().cwd().parent.parent.joinpath(f'data/{db_file}'))
+
 
 engine = create_engine(f'sqlite:///{db_file_path_str}')
 
@@ -79,6 +80,8 @@ with engine.connect() as conn, conn.begin():
     lineas_productos_df1 = pd.read_sql_table('lineas_proveedores', conn)
 engine.dispose()
 
+
+lineas_productos_df1.columns = ['prod_código', 'prod_descripción', 'prod_línea']
 lineas_productos_df = lineas_productos_df1[['prod_código', 'prod_línea']]
 
 
