@@ -46,8 +46,8 @@ descrip_users_data = []
 
 for user in descrip_users_json:
     new = {}
-    new['id'] = user['id']
-    new['name'] = user['name']
+    new['salesperson_id'] = user['id']
+    new['salesperson_name'] = user['name']
     new['active'] = user['active']
     new['sale_team_id'] = if_list_gt0_idex(user, 'sale_team_id', 0)
     new['sale_team_description'] = if_list_gt0_idex(user, 'sale_team_id', 1)
@@ -59,6 +59,7 @@ descrip_users_df = pd.DataFrame(descrip_users_data)
 descrip_users_df['sale_team_id'] = descrip_users_df['sale_team_id'].astype('Int64')
 
 descrip_users_df.loc[descrip_users_df['sale_team_id'].isin([5,6]), 'business_model'] = 'Piso'
+# descrip_users_df.loc[descrip_users_df['x_salesteam_ref'].isin([7,8]), 'business_model'] = 'CE'
 descrip_users_df.loc[descrip_users_df['sale_team_id'].isin([7,8]), 'business_model'] = 'CE'
 descrip_users_df.loc[descrip_users_df['sale_team_id'].isin([5,7]), 'warehouse'] = 'A1'
 descrip_users_df.loc[descrip_users_df['sale_team_id'].isin([6,8]), 'warehouse'] = 'A2'
