@@ -23,24 +23,11 @@ uid = common.authenticate(api_db, api_username, api_clave, {})
 models = xmlrpc.client.ServerProxy(f'{api_url}/xmlrpc/2/object')
 
 
-def if_list_gt0_idex (item: dict, key: str, index:int ) -> None | int:
-        val = item[key]
-
-        if val:
-            if len(val) == 0:
-                return None
-            else:
-                return val[index]
-        else:
-            return None
-
-
-
 
 # Tabla descripciones usuarios:
 
-descrip_uripsers_fields = ['name', 'active', 'sale_team_id']
-descrip_users_json = models.execute_kw(api_db, uid, api_clave, 'res.users', 'search_read', [["|", ("active", "=", True), ("active", "=", False)]], {'fields': descrip_uripsers_fields})
+descrip_users_fields = ['name', 'active', 'x_salesteam_ref']
+descrip_users_json = models.execute_kw(api_db, uid, api_clave, 'res.users', 'search_read', [["|", ("active", "=", True), ("active", "=", False)]], {'fields': descrip_users_fields})
 
 descrip_users_data = []
 
@@ -49,8 +36,8 @@ for user in descrip_users_json:
     new['salesperson_id'] = user['id']
     new['salesperson_name'] = user['name']
     new['active'] = user['active']
-    new['sale_team_id'] = if_list_gt0_idex(user, 'sale_team_id', 0)
-    new['sale_team_description'] = if_list_gt0_idex(user, 'sale_team_id', 1)
+    new['sale_team_id'] = user['x_salesteam_ref'][0] if user['x_salesteam_ref'] else pd.NA
+    new['sale_team_description'] = user['x_salesteam_ref'][1] if user['x_salesteam_ref'] else pd.NA
 
     descrip_users_data.append(new)
 
@@ -58,11 +45,10 @@ for user in descrip_users_json:
 descrip_users_df = pd.DataFrame(descrip_users_data)
 descrip_users_df['sale_team_id'] = descrip_users_df['sale_team_id'].astype('Int64')
 
-descrip_users_df.loc[descrip_users_df['sale_team_id'].isin([5,6]), 'business_model'] = 'Piso'
-# descrip_users_df.loc[descrip_users_df['x_salesteam_ref'].isin([7,8]), 'business_model'] = 'CE'
-descrip_users_df.loc[descrip_users_df['sale_team_id'].isin([7,8]), 'business_model'] = 'CE'
-descrip_users_df.loc[descrip_users_df['sale_team_id'].isin([5,7]), 'warehouse'] = 'A1'
-descrip_users_df.loc[descrip_users_df['sale_team_id'].isin([6,8]), 'warehouse'] = 'A2'
+descrip_users_df.loc[descrip_users_df['sale_team_id'] == 5, ['business_model', 'warehouse']] = ['Piso', 'A1']
+descrip_users_df.loc[descrip_users_df['sale_team_id'] == 6, ['business_model', 'warehouse']] = ['Piso', 'A2']
+descrip_users_df.loc[descrip_users_df['sale_team_id'] == 7, ['business_model', 'warehouse']] = ['CE', 'A1']
+descrip_users_df.loc[descrip_users_df['sale_team_id'] == 8, ['business_model', 'warehouse']] = ['CE', 'A2']
 
 descrip_sales_users_df  = descrip_users_df.loc[~descrip_users_df['sale_team_id'].isna()]
 
