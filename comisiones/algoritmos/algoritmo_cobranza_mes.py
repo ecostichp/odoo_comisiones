@@ -233,12 +233,12 @@ def pay_fact_df_func(mes: int, fact_doc_json: dict) -> pd.DataFrame:
             for pay in fact['invoice_payments_widget']['content']:
                 if 'Facturas' not in pay['journal_name'] and datetime.strptime(pay['date'], '%Y-%m-%d').month == mes:
                     new = {}
-                    new['fac_doc_id'] = fact['id']
-                    new['fac_doc_name'] = fact['name']
-                    new['fac_doc_cliente'] = fact['partner_id'][0]
-                    new['fac_doc_date'] = fact['date']
-                    new['fac_doc_total'] = fact['amount_total']
-                    new['fac_doc_deuda'] = fact['amount_residual']
+                    new['fact_doc_id'] = fact['id']
+                    new['fact_doc_name'] = fact['name']
+                    new['fact_doc_cliente'] = fact['partner_id'][0]
+                    new['fact_doc_date'] = fact['date']
+                    new['fact_doc_total'] = fact['amount_total']
+                    new['fact_doc_deuda'] = fact['amount_residual']
                     new['pay_journal'] = pay['journal_name']
 
                     if 'PdV ' in pay['ref']:
@@ -260,7 +260,7 @@ def pay_fact_df_func(mes: int, fact_doc_json: dict) -> pd.DataFrame:
 
     pay_fact_df.loc[~pay_fact_df['pay_journal'].str.contains('Punto De Venta'), ['ref']] = pd.NA
 
-    pay_fact_df['fac_doc_date'] = pd.to_datetime(pay_fact_df['fac_doc_date'], format='%Y-%m-%d')
+    pay_fact_df['fact_doc_date'] = pd.to_datetime(pay_fact_df['fact_doc_date'], format='%Y-%m-%d')
     pay_fact_df['pay_date'] = pd.to_datetime(pay_fact_df['pay_date'], format='%Y-%m-%d')
 
     return pay_fact_df
