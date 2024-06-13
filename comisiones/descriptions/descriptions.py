@@ -58,7 +58,7 @@ descrip_sales_users_df  = descrip_users_df.loc[~descrip_users_df['sale_team_id']
 # Tabla descripciones productos:
 
 descrip_product_fields = ['name', 'default_code']
-descrip_product_json = models.execute_kw(api_db, uid, api_clave, 'product.template', 'search_read', [], {'fields': descrip_product_fields})
+descrip_product_json = models.execute_kw(api_db, uid, api_clave, 'product.product', 'search_read', [], {'fields': descrip_product_fields})
 descrip_product_df1 = pd.DataFrame(descrip_product_json)
 descrip_product_df1.columns = ['product_id', 'prod_descripción', 'prod_código']
 
