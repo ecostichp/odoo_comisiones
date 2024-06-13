@@ -261,6 +261,13 @@ def fact_line_df_fun(fact_line_json: list[dict]) -> pd.DataFrame:
             new = {}
             new['fact_line_id'] = fact_line['id']
             new['product_id'] = fact_line['product_id'][0]
+            
+            pos = fact_line['product_id'][1].find(']')
+            if pos == -1:
+                new['product_name'] = fact_line['product_id'][1]
+            else:
+                new['product_name'] = fact_line['product_id'][1][pos+2 :]
+            
             new['quantity'] = fact_line['quantity']
             new['price_unit'] = fact_line['price_unit']
             new['discount'] = fact_line['discount'] / 100
