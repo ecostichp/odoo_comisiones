@@ -60,7 +60,7 @@ descrip_sales_users_df  = descrip_users_df.loc[~descrip_users_df['sale_team_id']
 descrip_product_fields = ['name', 'default_code']
 descrip_product_json = models.execute_kw(api_db, uid, api_clave, 'product.product', 'search_read', [], {'fields': descrip_product_fields})
 descrip_product_df1 = pd.DataFrame(descrip_product_json)
-descrip_product_df1.columns = ['product_id', 'prod_descripción', 'prod_código']
+descrip_product_df1.columns = ['product_id', 'prod_descripcion', 'prod_codigo']
 
 
 with engine.connect() as conn, conn.begin():  
@@ -68,11 +68,11 @@ with engine.connect() as conn, conn.begin():
 engine.dispose()
 
 
-lineas_productos_df1.columns = ['prod_código', 'prod_descripción', 'prod_línea']
-lineas_productos_df = lineas_productos_df1[['prod_código', 'prod_línea']]
+lineas_productos_df1.columns = ['prod_codigo', 'prod_descripcion', 'prod_linea']
+lineas_productos_df = lineas_productos_df1[['prod_codigo', 'prod_linea']]
 
 
-descrip_product_df = descrip_product_df1.merge(lineas_productos_df, how='left', on='prod_código')
+descrip_product_df = descrip_product_df1.merge(lineas_productos_df, how='left', on='prod_codigo')
 
 
 
