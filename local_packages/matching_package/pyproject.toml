@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "matching"
+version = "0.0.1"
+authors = [{ name = "Pável", email = "Onymm@gmail.com" }]
+description = "Prueba de paquete matching, instalación local"
+readme = "README.md"
+license = { file = "LICENSE" }
+dependencies = ["pandas"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }

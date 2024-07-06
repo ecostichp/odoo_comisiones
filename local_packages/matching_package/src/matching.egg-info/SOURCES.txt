@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/matching/__init__.py
+src/matching/_conditions.py
+src/matching/_constants.py
+src/matching/_evaluations.py
+src/matching/_list_storer.py
+src/matching/_match_methods.py
+src/matching/_temp.py
+src/matching/_visual_progress.py
+src/matching/main.py
+src/matching.egg-info/PKG-INFO
+src/matching.egg-info/SOURCES.txt
+src/matching.egg-info/dependency_links.txt
+src/matching.egg-info/requires.txt
+src/matching.egg-info/top_level.txt
