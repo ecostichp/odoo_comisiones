@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/iacele/__init__.py
+src/iacele/algoritmo_cobranza_mes.py
+src/iacele/algoritmo_ventas_mes.py
+src/iacele.egg-info/PKG-INFO
+src/iacele.egg-info/SOURCES.txt
+src/iacele.egg-info/dependency_links.txt
+src/iacele.egg-info/requires.txt
+src/iacele.egg-info/top_level.txt

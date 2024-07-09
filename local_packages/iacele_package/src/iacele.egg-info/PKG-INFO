@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
-Name: matching
+Name: iacele
 Version: 0.0.1
-Summary: Prueba de paquete matching, instalación local
-Author-email: Pável <Onymm@gmail.com>
+Summary: Librería para crear BI en la administración de la empresa LA CASA DEL CARPINTERO
+Author-email: Emilio Costich Pérez <ecostichp@gmail.com>
 License: MIT License
         
         Copyright (c) 2024 Emilio Costich Pérez
@@ -29,17 +29,6 @@ Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: pandas
 
-## Instalación de la librería en el ambiente virtual
+## IACele, inteligencia de negocios a tu alcance
 
-Copiar y pegar en terminal los siguientes comandos
-```bash
-cd .\matching\
-pip install -e .
-cd ..
-
-```
-
-Para desinstalar la librería, ejecutar el siguiente comando
-```bash
-pip uninstall matching
-```
+Librería para crear BI en la administración de la empresa LA CASA DEL CARPINTERO. Esta capa de código es creada por el grupo de desarrollo administrativo <b>LOS ZOPILOTES:</b> Gretel, Pável y el Lic.

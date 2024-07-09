@@ -3,10 +3,10 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "matching"
+name = "iacele"
 version = "0.0.1"
-authors = [{ name = "Pável", email = "Onymm@gmail.com" }]
-description = "Prueba de paquete matching, instalación local"
+authors = [{ name = "Emilio Costich Pérez", email = "ecostichp@gmail.com" }]
+description = "Librería para crear BI en la administración de la empresa LA CASA DEL CARPINTERO"
 readme = "README.md"
 license = { file = "LICENSE" }
 dependencies = ["pandas"]

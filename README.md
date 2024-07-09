@@ -16,5 +16,5 @@ env_comisiones-Odoo\Scripts\activate
 ##### 3. Actualiza PIP en tu entorno e instala las dependencias del proyecto.
 ```
 python -m pip install -U Pip
-python -m pip install -U Pandas OpenPyXL iPyKernel SQLAlchemy PyArrow MatPlotLib Seaborn
+python -m pip install -U Pandas OpenPyXL iPyKernel SQLAlchemy PyArrow MatPlotLib Seaborn IACele
 ```
