@@ -27,29 +27,29 @@
 --     "Líneas de orden que se trasladaron al punto de venta/Orden de ventas vinculada" TEXT
 -- );
 
-INSERT INTO TABLE ven (
-	ID,
-	Creado_el,
-    Estado_de_la_orden,
-    Almacen,
-    Cliente,
-    Vendedor,
-    Referencia_de_la_orden,
-    Cantidad,
-    Cantidad_de_entrega,
-    Cantidad_facturada,
-    Producto_Referencia_interna,
-    Producto,
-    Cost,
-    Descuento_percentage,
-    Subtotal,
-    Margen,
-    Margen_percentage,
-    Total_de_impuestos,
-    Total,
-    "Líneas de orden que se trasladaron al punto de venta",
-    "Líneas de orden que se trasladaron al punto de venta/Número de línea",
-    "Líneas de orden que se trasladaron al punto de venta/Orden de ventas vinculada"
-) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);
+-- INSERT INTO TABLE ven (
+-- 	ID,
+-- 	Creado_el,
+--     Estado_de_la_orden,
+--     Almacen,
+--     Cliente,
+--     Vendedor,
+--     Referencia_de_la_orden,
+--     Cantidad,
+--     Cantidad_de_entrega,
+--     Cantidad_facturada,
+--     Producto_Referencia_interna,
+--     Producto,
+--     Cost,
+--     Descuento_percentage,
+--     Subtotal,
+--     Margen,
+--     Margen_percentage,
+--     Total_de_impuestos,
+--     Total,
+--     "Líneas de orden que se trasladaron al punto de venta",
+--     "Líneas de orden que se trasladaron al punto de venta/Número de línea",
+--     "Líneas de orden que se trasladaron al punto de venta/Orden de ventas vinculada"
+-- ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);
 
-DROP TABLE ven;
+DROP TABLE ultimo_costo_sae;
