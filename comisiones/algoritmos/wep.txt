@@ -1,0 +1,15 @@
+Prod 28532
+Compra de febrero no se usa, por lo que se usará en febrero (ocupamos codificar para saber eso)
+Compra enero sí se usa, pero en febrero se vuelve a traer en los 5 días de tolerancia. Ocupamos codificarla para que NO SE TRAIGA o No SE USE.
+
+Tolerancia fija a 3,3 en api_call
+Quitar order_date_tolerance
+
+Manejar tolerancia por input
+en el asof_merge
+
+Si compra de siguiente mes no se ha
+merchado pero ya no quedan líneas
+de venta de ese producto en el mini_df,
+calificar la venta para siguiente mes.
+
