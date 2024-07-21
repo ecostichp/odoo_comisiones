@@ -1,10 +1,7 @@
-Prod 28532
-Compra de febrero no se usa, por lo que se usará en febrero (ocupamos codificar para saber eso)
-Compra enero sí se usa, pero en febrero se vuelve a traer en los 5 días de tolerancia. Ocupamos codificarla para que NO SE TRAIGA o No SE USE.
+Primero quitar proveedores oficiales
 
+Falta por trabajar los agrupados
 
-Si compra de siguiente mes no se ha
-merchado pero ya no quedan líneas
-de venta de ese producto en el mini_df,
-calificar la venta para siguiente mes.
+Coincidencias exactas sin límite de tiempo
 
+Coincidencias exacto en producto no en vendedora
