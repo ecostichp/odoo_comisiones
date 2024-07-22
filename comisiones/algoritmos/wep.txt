@@ -1,7 +1,3 @@
-Primero quitar proveedores oficiales
-
-Falta por trabajar los agrupados
-
 Coincidencias exactas sin límite de tiempo
 
 Coincidencias exacto en producto no en vendedora
