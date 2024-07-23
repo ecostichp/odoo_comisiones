@@ -1,3 +1,51 @@
-Coincidencias exactas sin límite de tiempo
+1) Varias compras para una venta. Coincide cantidad y vendedora.
 
-Coincidencias exacto en producto no en vendedora
+2) Misma vendedora, diferente cantidad:
+
+    2a) Una venta a una compra.
+
+    2b) Muchas ventas a una compra.
+
+    2c) Muchas compras mismo costo a una venta.
+
+    2d) Muchas compras diferente costo a una venta.
+
+    2e) Muchos Muchos
+
+3) Misma cantidad, diferente vendedora:
+
+    3a) Una venta a una compra.
+
+    3b) Muchas ventas a una compra.
+
+    3c) Muchas compras mismo costo a una venta.
+
+    3d) Muchas compras diferente costo a una venta.
+
+    3e) Muchos Muchos
+
+4) Diferente cantidad, diferente vendedora:
+
+    4a) Una venta a una compra.
+
+    4b) Muchas ventas a una compra.
+
+    4c) Muchas compras mismo costo a una venta.
+
+    4d) Muchas compras diferente costo a una venta.
+
+    4e) ¡La Muchosidad!
+
+
+
+Checar distribución de costo, si es la misma, merchar TODOS.
+
+Qué pasa cuando queda inventario o falta para las ventas.
+
+
+
+----> Cosas para futuro
+
+### Compras
+
+Algoritmo que cheque order_id vs partner_fact_name. No puede haber un mismo partner_fact_name para dos order_id vigentes, significa compra repetida.
