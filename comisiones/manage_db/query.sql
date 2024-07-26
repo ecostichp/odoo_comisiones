@@ -52,4 +52,4 @@
 --     "Líneas de orden que se trasladaron al punto de venta/Orden de ventas vinculada"
 -- ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);
 
-DROP TABLE ultimo_costo_sae;
+DROP TABLE ventas_año;
