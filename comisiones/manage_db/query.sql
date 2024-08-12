@@ -52,4 +52,9 @@
 --     "Líneas de orden que se trasladaron al punto de venta/Orden de ventas vinculada"
 -- ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);
 
-DROP TABLE cobranza_año;
+DROP TABLE compras_especiales_sin_usar_1_2024;
+DROP TABLE compras_especiales_sin_usar_2_2024;
+DROP TABLE compras_especiales_sin_usar_3_2024;
+DROP TABLE compras_especiales_sin_usar_4_2024;
+DROP TABLE compras_especiales_sin_usar_5_2024;
+DROP TABLE compras_especiales_sin_usar_6_2024;
