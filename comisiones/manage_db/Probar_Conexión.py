@@ -1,6 +1,11 @@
 import sqlite3
+from pathlib import Path
 
-db_file = './data/comisiones.db'
+# Se define la ruta para la base de datos local SQLite
+project_name = Path.cwd().name
+data_projetc_path = Path.home().joinpath(f'Dropbox/La Casa Del Carpintero/Departamento de Programación/data_projects_git/data_{project_name}')
+db_file = 'comisiones.db'
+db_file_path_str = str(data_projetc_path.joinpath(db_file))
 
 
 def connect_to_test_db():
@@ -10,7 +15,7 @@ def connect_to_test_db():
     
     try:
         # connect to the SQLite local
-        conn = sqlite3.connect(db_file)
+        conn = sqlite3.connect(db_file_path_str)
     
         # create a cursor
         cur = conn.cursor()

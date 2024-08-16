@@ -4,12 +4,13 @@ import xmlrpc.client
 import pandas as pd
 from sqlalchemy import create_engine
 
-db_file = 'comisiones.db'
-db_file_path_str = str(Path().cwd().parent.parent.joinpath(f'data/{db_file}'))
 
+project_name = Path.cwd().parent.parent.name
+data_projetc_path = Path.home().joinpath(f'Dropbox/La Casa Del Carpintero/Departamento de Programación/data_projects_git/data_{project_name}')
+db_file = 'comisiones.db'
+db_file_path_str = str(data_projetc_path.joinpath(db_file))
 
 engine = create_engine(f'sqlite:///{db_file_path_str}')
-
 
 
 api_url = os.environ.get('ODOO_URL_API')
@@ -51,7 +52,6 @@ descrip_users_df.loc[descrip_users_df['sale_team_id'] == 7, ['business_model', '
 descrip_users_df.loc[descrip_users_df['sale_team_id'] == 8, ['business_model', 'warehouse']] = ['CE', 'A2']
 
 descrip_sales_users_df  = descrip_users_df.loc[~descrip_users_df['sale_team_id'].isna()]
-
 
 
 
