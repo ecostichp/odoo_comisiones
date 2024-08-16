@@ -56,7 +56,11 @@ def search_costo_ventas_func(mes: int) -> list[str]:
 
 def _get_df_from_excel(file_name:str, file_location:str) -> pd.DataFrame:
 
-    file_path_str = str(Path().cwd().parent.parent.joinpath(f'data/{file_location}/{file_name}'))
+    project_name = Path.cwd().parent.parent.name
+    data_projetc_path = Path.home().joinpath(f'Dropbox/La Casa Del Carpintero/Departamento de Programación/data_projects_git/data_{project_name}')
+    file_path_str = str(data_projetc_path.joinpath(f'{file_location}/{file_name}'))
+    
+    
     df = pd.read_excel(file_path_str, dtype_backend='numpy_nullable')
 
     return df
@@ -114,8 +118,12 @@ def _ultimo_costo_sae_df_from_excel() -> list[pd.DataFrame]:
 def _get_db_engine(db_mode:str) -> Engine:
     
     if db_mode.lower() == 'local':
+        
+        project_name = Path.cwd().parent.parent.name
+        data_projetc_path = Path.home().joinpath(f'Dropbox/La Casa Del Carpintero/Departamento de Programación/data_projects_git/data_{project_name}')
+        db_file = 'comisiones.db'
+        db_file_path_str = str(data_projetc_path.joinpath(db_file))
 
-        db_file_path_str = str(Path().cwd().parent.parent.joinpath(f'data/comisiones.db'))
         engine = create_engine(f'sqlite:///{db_file_path_str}')
 
         return engine

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "iacele"
-version = "0.0.2"
+version = "0.0.3"
 authors = [{ name = "Emilio Costich Pérez", email = "ecostichp@gmail.com" }]
 description = "Librería para crear BI en la administración de la empresa LA CASA DEL CARPINTERO"
 readme = "README.md"
