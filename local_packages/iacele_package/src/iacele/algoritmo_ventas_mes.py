@@ -52,7 +52,12 @@ def search_fact_func(mes: int, dias: None | list[int] = None, vendedor: None | i
 
     if dias is None:
         param_dia_ini = datetime(2024, mes, 1)
-        param_dia_fin = datetime(2024, mes + 1, 1) - timedelta(days= 1)
+
+        if mes == 12:
+            param_dia_fin = datetime(2024, 12, 31)
+        else:
+            param_dia_fin = datetime(2024, mes + 1, 1) - timedelta(days= 1)
+            
     
     elif len(dias) != 2:
         raise Exception (f'El párametro "días_del_mes" debe ser una lista de 2 elementos. El día inicial de búsqueda se escribe en el índice 0 de la lista, el día final de búsqueda en el índice 1. La lista tiene: {len(dias)} de elementos')
