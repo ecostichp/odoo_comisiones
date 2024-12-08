@@ -1,1 +1,4 @@
-pandas
+Pandas
+OpenPyXL
+iPyKernel
+SQLAlchemy

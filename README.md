@@ -16,5 +16,11 @@ env_comisiones-Odoo\Scripts\activate
 ##### 3. Actualiza PIP en tu entorno e instala las dependencias del proyecto.
 ```
 python -m pip install -U Pip
-python -m pip install -U Pandas OpenPyXL iPyKernel SQLAlchemy
+```
+
+##### 3. Instala de manera local y editable el paquete IACele.
+Desde la carpeta raiz '\odoo_comisiones\' corre el siguiente script:
+
+```
+python -m pip install -e .\local_packages\iacele_package\
 ```

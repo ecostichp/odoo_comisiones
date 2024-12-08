@@ -27,7 +27,10 @@ License: MIT License
         
 Description-Content-Type: text/markdown
 License-File: LICENSE
-Requires-Dist: pandas
+Requires-Dist: Pandas
+Requires-Dist: OpenPyXL
+Requires-Dist: iPyKernel
+Requires-Dist: SQLAlchemy
 
 ## IACele, inteligencia de negocios a tu alcance
 
